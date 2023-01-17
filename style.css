@@ -79,7 +79,7 @@
 
 .section{
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     background-color: #fff;
 }
 .aboutus{
@@ -161,3 +161,62 @@
     margin:auto;
 }
 }
+/* --------NewsLetter-------- */
+.newsletter {
+    padding: 80px 0;
+    background: #222343;
+}
+.newsletter .subscribe {
+max-width: 650px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+z-index: 2;
+ }
+ .content-tuned{
+ 	    font-size: 0.8rem;
+    margin-bottom: 34px !important;
+    color: #fff;
+ }
+ .signup {
+    color: #fff;
+    margin-bottom: 6px;
+ }
+.form-control {
+    height: 50px;
+    border-color: #ffffff;
+    border-radius: 2px 0px 0px 2px;
+}
+.form-control:focus{
+box-shadow: none !important;
+border: 2px solid #243c4f;
+border-color: none;
+}
+.btn {
+min-height: 50px; 
+border-radius:0;
+background: #243c4f;
+color: #fff;
+font-weight:300;
+}
+.btn:hover {
+background: #c39f67;
+color: #fff
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25) !important;
+}
+.unsubscribe-link{
+	text-decoration: none !important;
+	font-size: 13px;
+	color: #fff; 
+}
+.unsubscribe-link:hover{
+	text-decoration: none !important;
+	color: #fff;
+}
+/* --------NewsLetter-------- */
