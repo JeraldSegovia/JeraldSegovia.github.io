@@ -11,10 +11,11 @@
     <title>Document</title>
 </head>
 <body>
+<!-- -------Navbar------- -->
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container">
-              <a class="navbar-brand" href="index.html"><img src="img/logo snipping.png" width="100px" height="50px"></a>
+              <a class="navbar-brand" href="index.html"><img src="img/vasolution.png" width="100px"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,7 +27,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="aboutus">About Us</a>
+                    <a class="nav-link" href="#aboutus">About Us</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
@@ -42,7 +43,7 @@
                     <a class="nav-link" href="#">Rates/Packages</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contactus">Contact</a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -52,43 +53,50 @@
               </div>
             </div>
           </nav>
-
+<!-- -------Navbar End------- -->
+<!-- -------Content Landing Page------- -->
           <div class="content d-flex justify-content-center align-items-center">
             <div class="text-content">
                 <h1>Business Match Made<br> in Heaven</h1>
                 <p>Let our Innovative VA Team Work for you</p>
-                <a href="">Get Started</a>
+                <div class="button">
+                  <a href="#">Get Started</a>
+                </div>
             </div>
             <video width="100%" height="100%" autoplay loop muted>
-            <source src="video/backgroundvideo.mp4" type="video/mp4">
+            <source src="video/vateamback.mp4" type="video/mp4">
           </div>
     </div>
-    <div class="boxes">
-        <div class="container">
-            <div class="boxes-list d-flex justify-content-evenly text-align-center">
-                <div>
+    
+        <div class="container-cards">
+                <div class="my-cards">
                     <i class="fa-solid fa-phone-volume"></i>
                     <h2>Schedule a Call</h2>
                     <p>All start with a conversation.</p>
-                    <a href="#">Learn more</a>
+                    <div class="button">
+                      <a href="#">Learn more</a>
+                    </div>
                 </div>
-                <div>
+                <div class="my-cards">
                     <i class="fa-solid fa-comments"></i>
                     <h2>Discuss your needs</h2>
                     <p>We do our best to support you</p>
-                    <a href="#">Learn more</a>
+                    <div class="button">
+                      <a href="#">Learn more</a>
+                    </div>
                 </div>
-                <div>
+                <div class="my-cards">
                     <i class="fa-solid fa-rocket"></i>
                     <h2>Onboard & Launch</h2>
                     <p>Take It easy: you're off and running now.</p>
-                    <a href="#">Learn more</a>
+                    <div class="button">
+                      <a href="#">Learn more</a>
+                    </div>
                 </div>
-            </div>
         </div>
-    </div>
+<!-- -------Content Landing Page End------- -->
 <!-- ---------aboutus---------- -->
-    <div class="section">
+    <div class="section" id="aboutus">
       <div class="aboutus">
         <div class="aboutus-section">
           <div class="title">
@@ -96,7 +104,6 @@
           </div>
           <div class="text">
             <p>Share a VA Team Solutions was launched with the vision to help overloaded small to medium business owners achieve their goals while also creating jobs and improving living conditions for VAs in the Philippines. Our team of VAs are quality-driven, proactive and professional in our approaches with our clients. We love to multi-task and have great attention to detail.
-
               We are committed to exceeding client expectations and love to help you become more productive and achieve your business goals.</p>
               <div class="button">
                 <a href="#">Learn more</a>
@@ -122,13 +129,100 @@
         </div>
       </div>
     </div>
-  <!-- -------Services------- -->
+<!-- -------AboutUs End------- -->
 
-  <!-- -------Services------- -->
+<!-- -------Video------- -->
+    <div class="video">
+      <video src="video/vateamvideoo.mp4" controls width="1000"></video>
+    </div>
+<!-- -------Video End------- -->
+
+<!-- -------Services------- -->
+
+<!-- -------Services End------- -->
+<!-- -------Contact Us------- -->
+    <div class="contactUs" id="contactus">
+      <div class="title">
+        <h1>CONTACT US</h1>
+      </div>
+      <div class="box">
+        <!-- ------Form------ -->
+        <div class="contact form">
+          <h3>Send a Message</h3>
+          <form class="formBox">
+            <div class="row50">
+              <div class="inputBox">
+                <span>First Name</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="inputBox">
+                <span>Last Name</span>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+
+            <div class="row50">
+              <div class="inputBox">
+                <span>Email</span>
+                <input type="text" placeholder="">
+              </div>
+              <div class="inputBox">
+                <span>Mobile</span>
+                <input type="text" placeholder="">
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <span>Message</span>
+                <textarea placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <input type="submit" value="Send">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- ------info------ -->
+        <div class="contact info">
+          <h3>Contact Info</h3>
+          <div class="infoBox">
+            <div>
+              <span><ion-icon name="location"></ion-icon></span>
+              <p>903/50 Clarence Street Sydney <br>Australia</p>
+            </div>
+            <div>
+              <span><ion-icon name="mail"></ion-icon></span>
+              <a href="mailto:info@shareavateam.com">info@shareavateam.com</a>
+            </div>
+            <div>
+              <span><ion-icon name="call"></ion-icon></span>
+              <a href="tel:+612 8004 1717">+612 8004 1717</a>
+            </div>
+        <!-- ----------Social Media--------- -->
+            <ul class="sci">
+              <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+              <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- --------map-------- -->
+        <div class="contact map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184256!2d77.20653218080871!3d28.62890171870568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001%2C%20India!5e0!3m2!1sen!2sph!4v1674031239207!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+<!-- -------Contact Us End------- -->
 
 
 
-  <!-- -------NewsLetter------- -->
+
+
+
+<!-- -------NewsLetter------- -->
   <div class="newsletter">
     <div class="content-news">
       <div class="row">
@@ -151,11 +245,11 @@
       </div>
       </div>
     </div>
-  <!-- -------NewsLetter------- -->
+<!-- -------NewsLetter End------- -->
 
 
 
-  <!-- -------Footer------- -->
+<!-- -------Footer------- -->
     <!-- Footer -->
 <footer class="text-center text-lg-start bg-dark text-white">
   <!-- Section: Social media -->
@@ -187,18 +281,11 @@
         <i class="fab fa-github"></i>
       </a>
     </div>
-    <!-- Right -->
   </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
   <section class="">
     <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
       <div class="row mt-3">
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-gem me-3 text-secondary"></i>Crown Leadership International Group
           </h6>
@@ -207,80 +294,72 @@
             dolor sit amet, consectetur adipisicing elit.
           </p>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
+        
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
+          
+          <!-- <p>
+            <a href="#!" class="text-reset">Home</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="#!" class="text-reset">About Us</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
+            <a href="#!" class="text-reset">Services</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="#!" class="text-reset">Rates/Packages</a>
           </p>
+          <p>
+            <a href="#!" class="text-reset">Contact</a>
+          </p> -->
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
+      
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <!-- <h6 class="text-uppercase fw-bold mb-4">
             Useful links
-          </h6>
+          </h6> -->
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <a href="#!" class="text-reset">Home</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <a href="#!" class="text-reset">About Us</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
+            <a href="#!" class="text-reset">Services</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="#!" class="text-reset">Rates/Packages</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact</a>
           </p>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p><i class="fas fa-home me-3 text-secondary"></i> 903/50 Clarence Street
+            Sydney</p>
           <p>
             <i class="fas fa-envelope me-3 text-secondary"></i>
-            info@example.com
+            info@shareavateam.com
           </p>
-          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +612 8004 1717</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> +612 8005 0317</p>
         </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
     </div>
   </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
     © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">WD37 KodeGo</a>
   </div>
-  <!-- Copyright -->
 </footer>
-<!-- Footer -->
-  <!-- -------Footer------- -->
+  <!-- -------Footer End------- -->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

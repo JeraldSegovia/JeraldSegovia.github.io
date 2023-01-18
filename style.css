@@ -2,45 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .text-content{
     position: absolute;
     text-align: center;
 }
-/* @media (min-aspect-ratio: 16/9){
-    text.content{
-        width: 100%;
-        height: auto;
-    }
-}
-@media (max-aspect-ratio: 16/9){
-    text.content{
-        width: auto;
-        height: 100%;
-    }
-} */
+
 .text-content h1{
-    font-size: 50px;
     color: #fff;
+    font-size: clamp(1rem, 10vw, 3rem);
+    font-family: 'Times New Roman', Times, serif;
 }
 .text-content p{
-    font-size: 15px;
-    color: #c39f67;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
 }
+/* .content .button{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+} */
 .content a{
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     color: #fff;
     background-color: #c39f67;
-    font-size: 20px;
-    border: 2px solid #fff;
-    padding: 15px 70px;
+    font-size: 15px;
+    /* border: 1px solid #fff; */
+    padding: 10px 20px;
     border-radius: 10px;
     margin-top: 25px;
 }
-.boxes-list div{
+/* /* ----------Cards--------- */
+.container-cards{
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.my-cards{
+    max-width: 250px;
+    min-height: 300px;
     margin: 10px 50px;
-    background: #b1abb9;
+    background: #978aa8;
     padding: 20px;
     font-size: 10px;
     font-weight: 100;
@@ -50,27 +61,35 @@
     flex-wrap: wrap;
     transition: background 0.5s, transform 0.5s;
 }
-.boxes-list div i{
+/* .my-cards{
+    margin: 10px;
+    max-width: 250px;
+    min-height: 300px;
+    background: #b1abb9;
+    text-align: center;
+} */
+.my-cards i{
+    margin: 10px;
     font-size: 50px;
     margin-bottom: 30px;
 }
-.boxes-list div h2{
+.my-cards h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.boxes-list div p{
-    font-size: 15px;
+.my-cards p{
+    font-size: 18px;
 }
-
-.boxes-list div a{
+.my-cards .button a{
+    background-color: #c39f67;
+    padding: 12px 40px;
     text-decoration: none;
-    background-color: #fff;
-    font-size: 10px;
-    border: 10px solid #fff;
-    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1.5px;
 }
-.boxes-list div:hover{
+.my-cards:hover{
     background: #c39f67;
     transform: translateY(-10px);
 }
@@ -108,6 +127,7 @@
     margin-top: 20px;
     color: #fff;
     font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .aboutus-section .aboutus p{
     margin-top: 10px;
@@ -127,7 +147,7 @@
     letter-spacing: 1.5px;
 }
 .button a:hover{
-    background-color: #f6089b;
+    background-color: #243c4f;
     color: #fff;
 }
 .aboutus-section .social{
@@ -161,6 +181,196 @@
     margin:auto;
 }
 }
+/* ---------aboutUs End-------- */
+/* ---------video-------- */
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ---------video-------- */
+
+/* -------contactUs------- */
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactUs .title .h1{
+    color: #fff;
+    font-weight: 500;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.mapa{
+    grid-area: form;
+}
+.contact{
+    padding: 40px;
+    background: #c39f67;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+}
+.contact h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: .8em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background-color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    color: #999;
+}
+
+/* ----info---- */
+.info{
+    background: #222343;
+}
+.info h3{
+    color: #fff;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color: white;
+}
+.info .infoBox div a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color: white;
+    font-size: 2em;
+    color: #ccc;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+/* --------Responsive--------- */
+@media (max-width: 991px){
+    .contactUs{
+        padding: 20px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "map";
+    }
+    .map{
+        min-height: 300px;
+    }
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .contact{
+        padding: 30px;
+    }
+    .map{
+        min-height: 300px;
+        padding: 30px;
+    }
+
+}
+/* -------contactUs End------- */
+
 /* --------NewsLetter-------- */
 .newsletter {
     padding: 80px 0;
@@ -219,4 +429,3 @@ color: #fff
 	text-decoration: none !important;
 	color: #fff;
 }
-/* --------NewsLetter-------- */
